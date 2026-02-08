@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert!</title>
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.1.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2026.1.1/core.js"></script>
-  </head>
-  <body>
-      <h1 class="title">Convert</h1>
-      <button onclick="href='window.location.TtB'">Text To binary</button>
-  </body>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">iceguz0.github.io</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-wrapper">
+          <div id="fullScreenSearch" class="fullscreen-search">
+    <div class="fullscreen-search-content">
+        <input type="text" id="fullScreenSearchInput" placeholder="Search pages..." aria-label="Search items">
+        <div id="fullScreenResultsList" class="results-list"></div>
+        <button id="closeSearchBtn">Close</button>
+    </div>
+</div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search items">
+            <button id="searchBtn">
+                <span class="icon-search"></span>
+                Search
+            </button>
+        </div>
+        <div id="resultsList" class="results-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+    </header>
+<h1 class="title">Text To Binary</h1>
+<input type="text" id="text">
+<button id="button">Convert</button>
+<div id="output"></div>
+<script type="py" src="./main.py"></script>
+</body>
 </html>
