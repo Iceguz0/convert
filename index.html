@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
     <header>
         <a href="https://iceguz0.github.io" class="logo">iceguz0.github.io</a>
         <nav>
@@ -17,31 +16,28 @@
             <a href="https://iceguz0.github.io">About</a>
             <a href="https://iceguz0.github.io">Contact</a>
         </nav>
+        <!-- Search Wrapper stays INSIDE the header -->
         <div class="search-wrapper">
-          <div id="fullScreenSearch" class="fullscreen-search">
-    <div class="fullscreen-search-content">
-        <input type="text" id="fullScreenSearchInput" placeholder="Search pages..." aria-label="Search items">
-        <div id="fullScreenResultsList" class="results-list"></div>
-        <button id="closeSearchBtn">Close</button>
-    </div>
-</div>
-
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search pages..." aria-label="Search items">
-            <button id="searchBtn">
-                <span class="icon-search"></span>
-                Search
-            </button>
+            <div id="fullScreenSearch" class="fullscreen-search">
+                <div class="fullscreen-search-content">
+                    <input type="text" id="fullScreenSearchInput" placeholder="Search pages...">
+                    <button id="closeSearchBtn">Close</button>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchBtn">Search</button>
+            </div>
         </div>
-        <div id="resultsList" class="results-list"></div>
-    </div>
+    </header> <!-- Header closed correctly here -->
 
+    <h1 class="title">Text To Binary</h1>
+    <input type="text" id="text">
+    <!-- Added py-click to trigger the Python function -->
+    <button id="button" py-click="convert_text">Convert</button>
+    <div id="output"></div>
+
+    <script type="py" src="./main.py"></script>
     <script src="https://iceguz0.github.io/script.js"></script>
-    </header>
-<h1 class="title">Text To Binary</h1>
-<input type="text" id="text">
-<button id="button">Convert</button>
-<div id="output"></div>
-<script type="py" src="./main.py"></script>
 </body>
 </html>
